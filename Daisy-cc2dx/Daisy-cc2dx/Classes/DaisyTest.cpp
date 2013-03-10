@@ -38,7 +38,7 @@ bool DaisyTest::init(){
     
     screenWidth = 960;
     screenHeight = 640;
-    pScale = (screenHeight * .125)/((new Particle())->sprite->getContentSize().height);
+    pScale = (screenHeight * .125)/((new Particle(this))->sprite->getContentSize().height);
     
     CCSize size = CCDirector::sharedDirector()->getWinSize();
 
@@ -49,7 +49,7 @@ bool DaisyTest::init(){
 
 void DaisyTest::createParticles(){
     for(int i = 0; i < numParticles; i++){
-        Particle * p = new Particle();
+        Particle * p = new Particle(this);
         initParticle(p);
         this->addChild(p->sprite);
         particles.push_back(p);
@@ -70,10 +70,10 @@ void DaisyTest::initParticle(Particle * particle){
     particle->vy = -min(-10 - 10 * (float)random()/RAND_MAX, sin(a)*v);
     particle->sprite->setPosition(ccp(size.width/2.0f, 0));
     
-    float scale = (pScale * .5) + ((float)random()/RAND_MAX * pScale * .5);
-    particle->sprite->setScaleX(scale);
-    particle->sprite->setScaleY(scale);
-    particle->sprite->setOpacity(GLubyte((.20 + ((float)random()/RAND_MAX * .80))*255.0));
+    //float scale = (pScale * .5) + ((float)random()/RAND_MAX * pScale * .5);
+    //particle->sprite->setScaleX(scale);
+    //particle->sprite->setScaleY(scale);
+    //particle->sprite->setOpacity(GLubyte((.20 + ((float)random()/RAND_MAX * .80))*255.0));
     
 }
 

@@ -11,14 +11,22 @@
 
 #include "cocos2d.h"
 
+cocos2d::CCSpriteBatchNode * batch = NULL;
+
 class Particle {
     
 public:
 
-    Particle(){
-        sprite = cocos2d::CCSprite::create("daisy.png");
+    Particle(cocos2d::CCNode * parent){
+        if(batch == NULL){
+            CCLOG("Initializing sprite batch");
+            cocos2d::CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("daisy-texture.plist");
+            batch = cocos2d::CCSpriteBatchNode::create("daisy-texture.png");
+            parent->addChild(batch);
+        }
+        sprite = cocos2d::CCSprite::createWithSpriteFrameName("daisy.png");
     }
-    
+
     float vx;
     float vy;
     cocos2d::CCSprite * sprite;

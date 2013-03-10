@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CB32AC316EC1DC700384875 /* daisy-texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CB32AC116EC1DC700384875 /* daisy-texture.png */; };
+		0CB32AC516EC1FE600384875 /* daisy-texture.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CB32AC416EC1FE500384875 /* daisy-texture.plist */; };
+		0CB32AC716EC222300384875 /* daisy.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CB32AC616EC222200384875 /* daisy.png */; };
 		0CD6959616E821DD00D59E4E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD6959516E821DD00D59E4E /* QuartzCore.framework */; };
 		0CD6959816E821DD00D59E4E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD6959716E821DD00D59E4E /* OpenGLES.framework */; };
 		0CD6959A16E821DD00D59E4E /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD6959916E821DD00D59E4E /* OpenAL.framework */; };
@@ -204,11 +207,13 @@
 		0CD6983A16E821E100D59E4E /* CCPhysicsDebugNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6983916E821E100D59E4E /* CCPhysicsDebugNode.cpp */; };
 		0CD6983D16E821E100D59E4E /* CCPhysicsSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6983C16E821E100D59E4E /* CCPhysicsSprite.cpp */; };
 		0CD6984416E821E100D59E4E /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6984316E821E100D59E4E /* AppDelegate.cpp */; };
-		0CD6984E16E8221300D59E4E /* daisy.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CD6984D16E8221300D59E4E /* daisy.png */; };
 		0CD6985116E8233300D59E4E /* DaisyTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6984F16E8233300D59E4E /* DaisyTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CB32AC116EC1DC700384875 /* daisy-texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daisy-texture.png"; sourceTree = "<group>"; };
+		0CB32AC416EC1FE500384875 /* daisy-texture.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "daisy-texture.plist"; sourceTree = "<group>"; };
+		0CB32AC616EC222200384875 /* daisy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daisy.png; sourceTree = "<group>"; };
 		0CBE8E2E16E8260C0060B6E2 /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Particle.h; path = Classes/Particle.h; sourceTree = "<group>"; };
 		0CD6959216E821DD00D59E4E /* Daisy-cc2dx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daisy-cc2dx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CD6959516E821DD00D59E4E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -646,7 +651,6 @@
 		0CD6984016E821E100D59E4E /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		0CD6984216E821E100D59E4E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		0CD6984316E821E100D59E4E /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
-		0CD6984D16E8221300D59E4E /* daisy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daisy.png; sourceTree = "<group>"; };
 		0CD6984F16E8233300D59E4E /* DaisyTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DaisyTest.cpp; path = Classes/DaisyTest.cpp; sourceTree = "<group>"; };
 		0CD6985016E8233300D59E4E /* DaisyTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DaisyTest.h; path = Classes/DaisyTest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -706,7 +710,9 @@
 		0CD695A516E821DD00D59E4E /* Daisy-cc2dx */ = {
 			isa = PBXGroup;
 			children = (
-				0CD6984D16E8221300D59E4E /* daisy.png */,
+				0CB32AC616EC222200384875 /* daisy.png */,
+				0CB32AC416EC1FE500384875 /* daisy-texture.plist */,
+				0CB32AC116EC1DC700384875 /* daisy-texture.png */,
 				0CD695A616E821DD00D59E4E /* Resources */,
 				0CD695BE16E821DD00D59E4E /* ios */,
 				0CD695C716E821DD00D59E4E /* libs */,
@@ -1626,7 +1632,9 @@
 				0CD695BA16E821DD00D59E4E /* Icon@2x.png in Resources */,
 				0CD695BC16E821DD00D59E4E /* iTunesArtwork in Resources */,
 				0CD6965216E821DE00D59E4E /* ChangeLog in Resources */,
-				0CD6984E16E8221300D59E4E /* daisy.png in Resources */,
+				0CB32AC316EC1DC700384875 /* daisy-texture.png in Resources */,
+				0CB32AC516EC1FE600384875 /* daisy-texture.plist in Resources */,
+				0CB32AC716EC222300384875 /* daisy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

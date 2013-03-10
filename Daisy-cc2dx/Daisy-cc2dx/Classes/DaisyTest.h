@@ -32,7 +32,7 @@ private:
 
     std::vector<Particle *> particles;
     float pScale;
-    int numParticles = 500;
+    int numParticles = 700;
     int speed = 20;
     
     int screenWidth;
