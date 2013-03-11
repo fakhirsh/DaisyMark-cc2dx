@@ -51,7 +51,7 @@ void DaisyTest::createParticles(){
     for(int i = 0; i < numParticles; i++){
         Particle * p = new Particle(this);
         initParticle(p);
-        this->addChild(p->sprite);
+        batch->addChild(p->sprite);
         particles.push_back(p);
     }
 }
